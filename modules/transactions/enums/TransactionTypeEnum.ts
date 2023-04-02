@@ -1,4 +1,4 @@
 export enum TransactionTypeEnum {
-  incomming = 'incomming',
-  outcomming = 'outcomming',
+  incoming = 'incoming',
+  outComing = 'outComing',
 }
