@@ -6,5 +6,6 @@ export interface CashFlowCompiledInterface {
   year: number;
   month: number;
   day: number;
+  accumulated: number;
   type: TransactionTypeEnum | 'balance';
 }
