@@ -1,7 +1,7 @@
-import { CashFlowCompiledInterface } from '@core/modules/statistics/CashFlowCompiledInterface';
+import {CashFlowStatisticsInterface} from "@core/modules/statistics/CashFlowStatistcs";
 
 export interface CashFlowCompiledSummaryInterface {
-  incoming: CashFlowCompiledInterface;
-  outComing: CashFlowCompiledInterface;
-  balance: CashFlowCompiledInterface;
+  incoming: CashFlowStatisticsInterface;
+  outComing: CashFlowStatisticsInterface;
+  balance: CashFlowStatisticsInterface;
 }
