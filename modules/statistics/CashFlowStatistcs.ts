@@ -1,5 +1,7 @@
+import { CashFlowCompiledInterface } from '@core/modules/statistics/CashFlowCompiledInterface';
+
 export interface CashFlowStatisticsInterface {
-  values: number[];
+  values: CashFlowCompiledInterface[];
   current: number;
   total: number;
   percentage: number;
