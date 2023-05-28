@@ -1,5 +1,5 @@
-import {TransactionTypeEnum} from '../enums/TransactionTypeEnum';
-import {TransactionCategoryInterface} from "@core/modules/transactions/entities/TransactionCategoryInterface";
+import { TransactionTypeEnum } from '../enums/TransactionTypeEnum';
+import { TransactionCategoryInterface } from '@core/modules/transactions/entities/TransactionCategoryInterface';
 
 export interface TransactionInterface {
   id: string;
@@ -8,4 +8,7 @@ export interface TransactionInterface {
   date: Date | string;
   type: TransactionTypeEnum;
   category: TransactionCategoryInterface;
+  instalment?: number;
+  referenceTransactionId?: string;
+  referenceTransaction?: TransactionInterface;
 }
