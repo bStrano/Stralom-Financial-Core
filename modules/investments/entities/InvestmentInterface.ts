@@ -1,5 +1,5 @@
-import { InvestmentTypeInterface } from '@core/modules/investments/entities/InvestmentTypeInterface';
-import { InvestmentStatusEnum } from '../enums/InvestmentStatusEnum';
+import {InvestmentTypeInterface} from '@core/modules/investments/entities/InvestmentTypeInterface';
+import {InvestmentStatusEnum} from '../enums/InvestmentStatusEnum';
 
 export interface InvestmentInterface {
   id: string;
@@ -12,5 +12,6 @@ export interface InvestmentInterface {
   userId: number;
   createdAt: Date;
   rentability: number;
+  rentabilityMonth: number;
   status: InvestmentStatusEnum;
 }
