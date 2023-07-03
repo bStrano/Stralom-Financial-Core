@@ -1,4 +1,4 @@
 export interface RedeemInvestmentDTOInterface {
-    currentValue: number;
-    date: number;
+  currentValue: number;
+  redeemDate: Date;
 }

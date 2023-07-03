@@ -1,11 +1,11 @@
-import {InvestmentTypeInterface} from '@core/modules/investments/entities/InvestmentTypeInterface';
-import {InvestmentStatusEnum} from '../enums/InvestmentStatusEnum';
+import { InvestmentTypeInterface } from '@core/modules/investments/entities/InvestmentTypeInterface';
+import { InvestmentStatusEnum } from '../enums/InvestmentStatusEnum';
 
 export interface InvestmentInterface {
   id: string;
   name: string;
   startDate: Date;
-  redemptionDate: Date;
+  redemptionDate?: Date | null;
   currentAmount: number;
   appliedAmount: number;
   type: InvestmentTypeInterface;
